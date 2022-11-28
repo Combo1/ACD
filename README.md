@@ -10,6 +10,4 @@ Um unsere Krankheiten automatisch zu klassifizieren werden sämtliche Krankheite
 
 Zusätzlich zu den ICD-10-GM Beschreibungen haben wir sämtliche ICD-10-GM Codes in Altmeyers Enzyklopädie gesucht und alle Krankheiten die darunter fallen in "synonyme.csv" geschrieben, sodass wir jede Krankheit mit diesen expliziten Krankheitsbezeichnungen vergleichen. Des Weiteren verwenden wir auch noch das alphabetische Verzeichnis aus ICD-10-GM, welches Krankheitsbezeichnungen aus dem stationären und ambulanten Alltagsgebrauch beinhaltet, um unsere Krankheiten zu vergleichen.
 
-Optional ist die Verwendung des "Isderma" Parameters, standardmäßig ist diese Option abgestellt, kann aber durch setzen von "Isderma" = True geändert werden. Diese Option bevorzugt primär dermatologische Krankheiten, sodass diese häufiger angewendet werdet werden.
-
 Abschließend verwenden wir noch den "Sorensen Dice Coefficient" in einer Hybrid-Version mit der Token Set Ratio, um unsere Texte zu vergleichen. Diese Hybrid-Lösung benötigt viel Rechenleistung auf ihrer Maschine, sodass wir Multiprocessing verwenden, um sämtliche Texte miteinander zu vergleichen.
